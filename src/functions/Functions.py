@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import time
-from functions.GlobalConfig import Config
+from src.functions.GlobalConfig import Config
 
 diaGlobal = time.strftime("%Y-%m-%d")  # formato aaaa/mm/dd
 horaGlobal = time.strftime("%H%M%S")  # formato 24 houras

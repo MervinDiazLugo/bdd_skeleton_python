@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from behave import *
-from functions.Functions import Functions
+from src.functions.Functions import Functions
 
 use_step_matcher("re")
 

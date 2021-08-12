@@ -1,6 +1,6 @@
 import logging
 import os
-from functions.GlobalConfig import Config
+from src.functions.GlobalConfig import Config
 
 # Directorio Base
 basedir = os.path.abspath(os.path.join(__file__, "../.."))
