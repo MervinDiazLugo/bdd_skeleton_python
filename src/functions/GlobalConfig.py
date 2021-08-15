@@ -9,8 +9,7 @@ class Config():
     # JsonData
     Json = basedir + u"/pages"
 
-    Environment = 'Dev'
-
+    Environment = 'Test'
 
     # DIRECTORIO DE LA EVIDENCIA
     Path_Evidencias = basedir + u'/data/capturas'
@@ -21,9 +20,7 @@ class Config():
     if Environment == 'Dev':
         URL = 'https://dev.spotify.com/py/signup/'
 
-
     if Environment == 'Test':
-
         URL = 'https://test.spotify.com/py/signup/'
 
 

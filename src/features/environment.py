@@ -9,47 +9,43 @@ HourFormat = "%H%M%S"
 
 
 def before_all(self):
-    pass
+    print('1- Before all')
 
 
 def before_feature(self, feature):
-    pass
+    print(f'2- Before Feature: {feature}')
 
 
 def before_scenario(self, scenario):
-
+    print(f'3- Before Scenario: {scenario}')
     if Config.Environment == 'Dev':
         print("Hola Chicos Dev")
-
     if Config.Environment == 'Test':
         print("Hola Chicos Test")
 
 
 def before_step(self, step):
+    print(f'4- Before step {step}')
+
+
+def after_step(self, step):
+    print(f'4.1- after step {step}')
     pass
 
 
 def before_tag(self, tag):
-    pass
+    if tag == "Test":
+        print("Hola, ejecutaste el tag test")
 
 
 def after_all(self):
-    pass
+    print('5- after all')
 
 
 def after_feature(self, feature):
-    pass
+    print(f'6- after feature {feature}')
 
 
 def after_scenario(self, scenario):
+    # print(f'6- after scenario {scenario}')
     pass
-
-
-def after_step(self, step):
-    pass
-
-
-
-
-
-
