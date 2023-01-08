@@ -1,6 +1,7 @@
 import logging
 import os
 from src.functions.GlobalConfig import Config
+from src.functions.Commons import Commons
 
 # Directorio Base
 basedir = os.path.abspath(os.path.join(__file__, "../.."))
@@ -14,14 +15,14 @@ def before_all(self):
 
 
 def before_feature(self, feature):
-    # print(f'2- Before Feature: {feature}')
-    pass
+    Commons.open_browser(self)
 
 
 def before_scenario(self, scenario):
     # print(f'3- Before Scenario: {scenario}')
     if Config.Environment == 'Dev':
         print("Hola Chicos Dev")
+
     if Config.Environment == 'Test':
         print("Hola Chicos Test")
 

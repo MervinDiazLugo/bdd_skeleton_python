@@ -11,6 +11,8 @@ class Config():
 
     Environment = 'Test'
 
+    NAVEGADOR = 'CHROME'
+
     # DIRECTORIO DE LA EVIDENCIA
     Path_Evidencias = basedir + u'/data/capturas'
 
@@ -18,10 +20,10 @@ class Config():
     Excel = basedir + u'/data/DataTest.xlsx'
 
     if Environment == 'Dev':
-        URL = 'https://dev.spotify.com/py/signup/'
+        URL = 'https://www.google.com/?hl=es'
 
     if Environment == 'Test':
-        URL = 'https://test.spotify.com/py/signup/'
+        URL = 'https://www.google.com/?hl=en'
 
 
 
